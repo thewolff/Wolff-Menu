@@ -18,16 +18,45 @@
   <!-- end CSS-->
 
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <style>
+  
+  #nav {
+	position:fixed;
+	background:#FFF;
+	width:100%
+	}
+  #section1, #section2, #div1 {
+  height:900px;
+  }
+  
+  #section1, #div1 {
+	background:#000;
+	}
+	
+	#section2 {
+	background:#999;
+	}
+	
+	.current {
+	background:red;
+  
+  </style>
 </head>
 
 <body>
 
   <div id="container">
     <header>
-
+		<nav id="nav">
+			<a class="wolff" href="#section1">Section 1</a>
+			<a class="wolff" href="#section2">Section 2</a>
+			<a class="wolff" href="#div1">Div 1</a>
+		</nav>
     </header>
     <div id="main" role="main">
-
+		<section class="wolff" id="section1"></section>
+		<section class="wolff" id="section2"></section>
+		<div class="wolff" id="div1"></div>
     </div>
     <footer>
 
@@ -40,7 +69,7 @@
 
 
   <!-- scripts concatenated and minified via ant build script-->
-  <script defer src="js/wolffmenu.jquery.js"></script>
+  <script defer src="js/jquery.wolffmenu.js"></script>
   <!-- end scripts-->
 
 
